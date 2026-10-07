@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 80vh;
+
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
