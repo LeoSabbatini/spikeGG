@@ -1,0 +1,11 @@
+{
+  "cadastroTime": [
+    {
+      "nome": "Loud",
+      "jogo": "Valorant",
+      "id": "MJRBRBQILXo"
+    }
+  ],
+  "jogadores": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

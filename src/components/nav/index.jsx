@@ -5,10 +5,10 @@ export default function index() {
     <nav >
         <ul className="menu">
             <li><Link to="/">Início</Link></li>
-            <li><Link to="/Sobre">Sobre</Link></li>
-            <li><Link to="/Usuarios">Times</Link></li>
-            <li><Link to="/cadastro">CadastroTimes</Link></li>
-            <li><Link to="/cadastroNews">cadastroJogadores</Link></li>
+            <li><Link to="/sobre">Sobre</Link></li>
+            <li><Link to="/times">Times</Link></li>
+            <li><Link to="/cadastroTime">CadastroTimes</Link></li>
+            <li><Link to="/cadastroJogadores">cadastroJogadores</Link></li>
         </ul>
     </nav>
   )
