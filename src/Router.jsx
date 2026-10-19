@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './Pages/Home'
+import Home from './pages/home'
 import Nav from './components/nav'
 import CadastroTime from "./pages/cadastro"
 import Times from "./pages/times"
