@@ -1,0 +1,93 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px; 
+    padding: 60px 20px;
+}
+
+.hero {
+    text-align: center;
+    max-width: 700px;
+}
+
+.hero p {
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.btn {
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background-color: #ffbb00; 
+    color: #1b181d;
+}
+
+.btn-primary:hover {
+    background-color: #e6a800;
+}
+
+.btn-secondary {
+    background-color: #2a242e;
+    color: #dfdfdf;
+    border: 2px solid #3d3542;
+}
+
+.btn-secondary:hover {
+    background-color: #3d3542;
+}
+
+
+.stats {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.stat-card {
+    background-color: #2a242e;
+    border: 2px solid #1b181d;
+    border-radius: 8px;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card h3 {
+    color: #ffbb00;
+    font-size: 42px;
+    margin: 0 0 10px 0;
+}
+
+.stat-card p {
+    color: #cccccc;
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

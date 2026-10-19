@@ -9,6 +9,11 @@
       "nome": "Furia",
       "jogo": "valorant",
       "id": "uzcqGxw6Oa8"
+    },
+    {
+      "nome": "MIBR",
+      "jogo": "valorant",
+      "id": "zGJeOJ4wb-0"
     }
   ],
   "jogadores": [
@@ -61,6 +66,53 @@
       "nome": "Nerve",
       "time": "Furia",
       "id": "RjENBV48YOw"
+    },
+    {
+      "nome": "Aspas",
+      "time": "MIBR",
+      "id": "8oWutxduwdw"
+    },
+    {
+      "nome": "Verno",
+      "time": "MIBR",
+      "id": "sMAc_60tutU"
+    },
+    {
+      "nome": "Zekken",
+      "time": "MIBR",
+      "id": "GPMvibzafRk"
+    },
+    {
+      "nome": "Mazino",
+      "time": "MIBR",
+      "id": "6xDvmj8jXZI"
+    },
+    {
+      "nome": "Tex",
+      "time": "MIBR",
+      "id": "3pnK8x8Vejc"
+    }
+  ],
+  "topicos": [
+    {
+      "id": "1",
+      "titulo": "O que é a plataforma?",
+      "texto": "Este é um sistema simples e direto dedicado a organizar e salvar informações sobre times de e-sports. Nossa plataforma funciona como um diretório central onde você pode registrar equipes de diferentes modalidades e manter um histórico claro dos elencos."
+    },
+    {
+      "id": "2",
+      "titulo": "Nosso Objetivo",
+      "texto": "Nosso principal objetivo é facilitar a gestão e a visualização de line-ups para fãs, jogadores amadores e organizadores de pequenos torneios. Queremos oferecer um espaço limpo, rápido e fácil de usar para mapear o cenário competitivo de qualquer jogo."
+    },
+    {
+      "id": "3",
+      "titulo": "Principais Funcionalidades",
+      "texto": "Cadastro de Times, gerenciamento de jogadores e organização prática visualizando a lista completa de times cadastrados e descobrindo quem joga onde."
+    },
+    {
+      "id": "4",
+      "titulo": "Para quem é este site?",
+      "texto": "Feito para qualquer entusiasta de esportes eletrônicos, desde quem acompanha os grandes campeonatos mundiais até quem está montando um time amador com os amigos para jogar no fim de semana."
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

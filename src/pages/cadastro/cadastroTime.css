@@ -1,11 +1,9 @@
-
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
 }
-
 
 .container h1 {
     color: #dfdfdf;
@@ -16,7 +14,6 @@
     letter-spacing: 1px;
 }
 
-
 form {
     background-color: #2a242e;
     border: 2px solid #1b181d;
@@ -24,10 +21,8 @@ form {
     padding: 35px;
     width: 100%;
     max-width: 450px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
 }
-
 
 .form-control {
     display: flex;
@@ -42,7 +37,6 @@ form {
     margin-bottom: 8px;
 }
 
-
 .form-control input,
 .form-control select {
     background-color: #1b181d;
@@ -51,12 +45,7 @@ form {
     padding: 12px 15px;
     color: #dfdfdf;
     font-size: 16px;
-
 }
-
-
-
-
 
 form button {
     width: 100%;
@@ -74,8 +63,4 @@ form button {
 
 form button:hover {
     background-color: #ffbb00;
-}
-
-form button:active {
-    transform: scale(0.98);
 }

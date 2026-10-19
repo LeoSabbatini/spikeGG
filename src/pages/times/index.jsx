@@ -32,11 +32,11 @@ export default function Index() {
             {times.map((time) => (
                 <article className='content-times' key={time.id}>
                     <strong>
-                        Nome do Time: {time.nome}
+                        {time.nome}
                     </strong>
                     <br />
                     <strong>
-                        Jogo: {time.jogo}
+                        {time.jogo}
                     </strong>
                     <br />
 
