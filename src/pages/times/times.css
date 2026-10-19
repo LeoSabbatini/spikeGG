@@ -11,11 +11,9 @@
     letter-spacing: 1px;
 }
 
-/* Transforma cada time em um card escuro com detalhe roxo na lateral */
 .content-times {
     background-color: #2a242e;
     border: 2px solid #1b181d;
-    border-left: 5px solid #7b3fe4;
     border-radius: 8px;
     padding: 20px;
     margin: 0 auto 16px auto;
@@ -29,7 +27,6 @@
     line-height: 1.8;
 }
 
-/* Botão de deletar em tom vermelho escuro gamer */
 .delete {
     background-color: #d9383a;
     color: #ffffff;
@@ -47,7 +44,6 @@
     background-color: #ff4d4f;
 }
 
-/* Esconde a linha <hr /> padrão pois os cards já têm borda e espaçamento */
 .content-times hr {
     display: none;
 }

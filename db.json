@@ -1,11 +1,67 @@
 {
-  "cadastroTime": [
+  "times": [
     {
       "nome": "Loud",
       "jogo": "Valorant",
       "id": "MJRBRBQILXo"
+    },
+    {
+      "nome": "Furia",
+      "jogo": "valorant",
+      "id": "uzcqGxw6Oa8"
     }
   ],
-  "jogadores": [],
+  "jogadores": [
+    {
+      "nome": "Artzin",
+      "time": "Furia",
+      "id": "cdGJmrkBhTs"
+    },
+    {
+      "nome": "Lukxo",
+      "time": "Loud",
+      "id": "__wZnnhkt3U"
+    },
+    {
+      "nome": "Erde",
+      "time": "Loud",
+      "id": "0nyX9UpRzNk"
+    },
+    {
+      "nome": "Darker",
+      "time": "Loud",
+      "id": "SRGbVLu5tYE"
+    },
+    {
+      "nome": "DaviH",
+      "time": "Loud",
+      "id": "NlqPDbhsblo"
+    },
+    {
+      "nome": "KoalaNoob",
+      "time": "Furia",
+      "id": "Y5fUlVMMpho"
+    },
+    {
+      "nome": "COM",
+      "time": "Furia",
+      "id": "YhVajrYXsZk"
+    },
+    {
+      "nome": "Tkzin",
+      "time": "Loud",
+      "id": "YEMtl0F0JUM"
+    },
+    {
+      "nome": "Eeiu",
+      "time": "Furia",
+      "id": "N98jvradw8s"
+    },
+    {
+      "nome": "Nerve",
+      "time": "Furia",
+      "id": "RjENBV48YOw"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

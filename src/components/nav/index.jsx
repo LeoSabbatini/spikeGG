@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './nav.css'
-export default function index() {
+export default function Index() {
   return (
     <nav >
         <ul className="menu">

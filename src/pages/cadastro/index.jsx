@@ -28,7 +28,7 @@ export default function index() {
       return false;
     }
 
-    fetch("http://localhost:3000/cadastroTime", {
+    fetch("http://localhost:8080/times", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
