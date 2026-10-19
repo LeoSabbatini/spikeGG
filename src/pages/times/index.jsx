@@ -7,19 +7,19 @@ export default function Index() {
     const [jogadores, setJogadores] = useState([]); 
 
     useEffect(() => {
-        fetch("http://localhost:8080/times")
+        fetch("https://6ad5fdadf71f154ac4864986.mockapi.io/Times")
             .then((response) => response.json())
             .then((data) => setTimes(data))
             .catch((error) => console.error("Erro no fetch de times:", error))
 
-        fetch("http://localhost:8080/jogadores")
+        fetch("https://6ad5fdadf71f154ac4864986.mockapi.io/Jogadores")
             .then((response) => response.json())
             .then((data) => setJogadores(data))
             .catch((error) => console.error("Erro no fetch de jogadores:", error))
     }, [])
 
     const deleteTimes = (id) => {
-        fetch(`http://localhost:8080/times/${id}`, { method: "DELETE" })
+        fetch(`https://6ad5fdadf71f154ac4864986.mockapi.io/Times/${id}`, { method: "DELETE" })
             .then(() => {
                 setTimes(times.filter((time) => time.id !== id))
             })

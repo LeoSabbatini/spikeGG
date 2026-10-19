@@ -26,7 +26,7 @@ export default function CadastroJogador() {
       return false;
     }
 
-    fetch("http://localhost:8080/jogadores", {
+    fetch("https://6ad5fdadf71f154ac4864986.mockapi.io/Jogadores", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

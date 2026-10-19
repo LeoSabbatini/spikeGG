@@ -3,7 +3,7 @@ import {toast, ToastContainer} from "react-toastify"
 import "react-toastify/dist/ReactToastify.css";
 import "./cadastroTime.css"
 
-export default function index() {
+export default function Index() {
 
   const [formData, setFormData] = useState({
     nome: "",
@@ -28,7 +28,7 @@ export default function index() {
       return false;
     }
 
-    fetch("http://localhost:8080/times", {
+    fetch("https://6ad5fdadf71f154ac4864986.mockapi.io/Times", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
