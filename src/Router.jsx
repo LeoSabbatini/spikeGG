@@ -5,6 +5,7 @@ import CadastroTime from "./pages/cadastro"
 import Times from "./pages/times"
 import CadastroJogador from './pages/cadastroJogadores'
 import Sobre from './pages/sobre'
+import Jogadores from './pages/jogadores'
 export default function Router() {
   return (
     <BrowserRouter>
@@ -15,7 +16,7 @@ export default function Router() {
       <Route path="/cadastroTime" element={<CadastroTime />} />
       <Route path="/times" element={<Times />} />
       <Route path="/cadastroJogadores" element={<CadastroJogador />} />
-
+      <Route path="/jogadores" element={<Jogadores/>}/>
     </Routes>
     </BrowserRouter>
   )

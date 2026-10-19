@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import {toast, ToastContainer} from "react-toastify"
 import "react-toastify/dist/ReactToastify.css";
 import "./cadastroTime.css"
@@ -12,7 +12,7 @@ export default function Index() {
 
 
   const handleChange = (e) => {
-    const { name, value } = e.target; // alvo
+    const { name, value } = e.target;
 
     setFormData((prevFormData) => ({
       ...prevFormData,
@@ -23,7 +23,7 @@ export default function Index() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if(formData.nome === "" || formData.jogo === ""){
+  if(formData.nome === "" || formData.jogo === "" || formData.logo === ""){
       toast.error("Preencha todos os campos")
       return false;
     }
@@ -41,7 +41,8 @@ export default function Index() {
         toast.success("Time cadastrado com sucesso")
         setFormData({
           nome: "",
-          jogo: ""
+          jogo: "",
+          logo: "" 
         });
       });
   }
@@ -59,6 +60,10 @@ export default function Index() {
         <article className='form-control'>
           <label htmlFor="jogo">Jogo</label>
           <input type="text" name='jogo' value={formData.jogo} onChange={handleChange} />
+        </article>
+        <article className='form-control'>
+          <label htmlFor="logo">URL da Logo</label>
+          <input type="text" name='logo' placeholder='coloque o link da imagem' value={formData.logo} onChange={handleChange} />
         </article>
 
         <button type='submit'>Cadastrar</button>

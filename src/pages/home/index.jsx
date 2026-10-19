@@ -7,12 +7,12 @@ export default function Home() {
     const [totalJogadores, setTotalJogadores] = useState(0);
 
     useEffect(() => {
-        fetch("http://localhost:8080/times")
+        fetch("https://6ad5fdadf71f154ac4864986.mockapi.io/Times")
             .then((res) => res.json())
             .then((data) => setTotalTimes(data.length))
             .catch((error) => console.error(error));
 
-        fetch("http://localhost:8080/jogadores")
+        fetch("https://6ad5fdadf71f154ac4864986.mockapi.io/Jogadores")
             .then((res) => res.json())
             .then((data) => setTotalJogadores(data.length))
             .catch((error) => console.error(error));

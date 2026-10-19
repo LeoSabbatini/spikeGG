@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import {toast, ToastContainer} from "react-toastify"
 import "react-toastify/dist/ReactToastify.css";
 import "./cadastroJogadores.css"
-export default function CadastroJogador() {
+export default function Index() {
 
   const [formData, setFormData] = useState({
     nome: "",

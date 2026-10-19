@@ -28,43 +28,50 @@ export default function Index() {
     return (
         <section className='container times'>
             <h2>Lista de Times</h2>
-
-            {times.map((time) => (
-                <article className='content-times' key={time.id}>
-                    <strong>
-                        {time.nome}
-                    </strong>
-                    <br />
-                    <strong>
-                        {time.jogo}
-                    </strong>
-                    <br />
-
-                    <div>
-                        <h4>Jogadores:</h4>
-                        <ul>
-                            {jogadores
-                                .filter((jogador) => jogador.time === time.nome) 
-                                .map((jogador) => (
-                                    <li key={jogador.id}>{jogador.nome}</li>
-                                ))
-                            }
-                        </ul>
-                        {jogadores.filter((jogador) => jogador.time === time.nome).length === 0 && (
-                            <small>Nenhum jogador cadastrado.</small>
+            <div className='cartao'>
+                {times.map((time) => (
+                    <article className='content-times' key={time.id}>
+                        {time.logo && (
+                            <img 
+                                src={time.logo} 
+                                alt={`Logo do time ${time.nome}`} 
+                                className="logo-time"
+                            />
                         )}
-                    </div>
+                        <strong>
+                            {time.nome}
+                        </strong>
+                        <br />
+                        <strong>
+                            {time.jogo}
+                        </strong>
+                        <br />
 
-                    <button
-                        className='delete'
-                        onClick={() => deleteTimes(time.id)}
-                    >
-                        Deletar
-                    </button>
-                    <hr />
-                </article>
-            ))}
+                        <div>
+                            <h4>Jogadores:</h4>
+                            <ul>
+                                {jogadores
+                                    .filter((jogador) => jogador.time === time.nome) 
+                                    .map((jogador) => (
+                                        <li key={jogador.id}>{jogador.nome}</li>
+                                    ))
+                                }
+                            </ul>
+                            {jogadores.filter((jogador) => jogador.time === time.nome).length === 0 && (
+                                <small>Nenhum jogador cadastrado.</small>
+                            )}
+                        </div>
 
+                        <button
+                            className='delete'
+                            onClick={() => deleteTimes(time.id)}
+                        >
+                            Deletar
+                        </button>
+                        <hr />
+                    </article>
+                ))}
+            </div>
         </section>
     )
 }
