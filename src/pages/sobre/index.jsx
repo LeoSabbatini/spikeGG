@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './sobre.css';
 
 export default function Sobre() {
-  const [topicos, setTopicos] = useState([]);
+  const [setTopicos] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:8080/topicos")
