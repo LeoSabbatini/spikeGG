@@ -23,34 +23,34 @@ export default function Jogadores() {
     return (
         <section className='container jogadores'>
             <h2>Lista de Jogadores</h2>
+            <div className='cartao'>
+                {jogadores.map((jogador) => (
+                    <article className='content-jogadores' key={jogador.id}>
+                        
+                        <strong>
+                            Jogador: {jogador.nome}
+                        </strong>
+                        <br />
+                        <strong>
+                            Time: {jogador.time}
+                        </strong>
+                        <br />
+                        <br />
 
-            {jogadores.map((jogador) => (
-                <article className='content-jogadores' key={jogador.id}>
-                    
-                    <strong>
-                        Jogador: {jogador.nome}
-                    </strong>
-                    <br />
-                    <strong>
-                        Time: {jogador.time}
-                    </strong>
-                    <br />
-                    <br />
+                        <button
+                            className='delete'
+                            onClick={() => deleteJogador(jogador.id)}
+                        >
+                            Deletar
+                        </button>
+                        <hr />
+                    </article>
+                ))}
 
-                    <button
-                        className='delete'
-                        onClick={() => deleteJogador(jogador.id)}
-                    >
-                        Deletar
-                    </button>
-                    <hr />
-                </article>
-            ))}
-
-            {jogadores.length === 0 && (
-                <p>Nenhum jogador encontrado.</p>
-            )}
-
+                {jogadores.length === 0 && (
+                    <p>Nenhum jogador encontrado.</p>
+                )}
+            </div>
         </section>
     )
 }
